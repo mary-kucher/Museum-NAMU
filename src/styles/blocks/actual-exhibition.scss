@@ -14,11 +14,11 @@
   &__place {
 
     &--1 {
-    margin-bottom: 60px;
+      margin-bottom: 60px;
 
-    @include onTablet {
-      margin-bottom: 0;
-    }
+      @include onTablet {
+        margin-bottom: 0;
+      }
     }
 
     &:last-child {

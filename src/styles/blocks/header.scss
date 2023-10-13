@@ -4,6 +4,21 @@
   height: 748px;
   margin-bottom: 90px;
 
+  &__container {
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @include onDesktop {
+      padding: 0 55px;
+    }
+
+    @include onTablet {
+      padding: 0 39px;
+    }
+  }
+
   @include onTablet {
     height: 1092px;
     margin-bottom: 105px;
@@ -78,7 +93,6 @@
     line-height: 24px;
     margin-bottom: 40px;
 
-
     @include onTablet {
       margin-bottom: 50px;
       max-width: 330px;
@@ -121,7 +135,7 @@
     display: none;
     color: $white-color;
 
-    @include onDesktop{
+    @include onDesktop {
       display: flex;
       align-items: center;
       width: 50%;

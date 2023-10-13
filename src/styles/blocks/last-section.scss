@@ -20,13 +20,12 @@
       font-weight: 400;
     }
 
-
     &:hover {
       border-bottom: 1px $main-color solid;
-      color: #AF3419;
+      color: #af3419;
 
       &::placeholder {
-        color: #AF3419;
+        color: #af3419;
       }
     }
 

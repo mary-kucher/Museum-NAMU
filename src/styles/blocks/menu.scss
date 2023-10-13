@@ -9,8 +9,8 @@
   transition: transform 0.3s;
 
   &--is-open {
-  transform: translateY(0);
-  transition: transform 1s;
+    transform: translateY(0);
+    transition: transform 1s;
   }
 
   @include onTablet {

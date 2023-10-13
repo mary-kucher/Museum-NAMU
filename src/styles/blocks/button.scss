@@ -4,7 +4,7 @@
   justify-content: center;
   width: 100%;
   max-width: 330px;
-  background-color:$main-color;
+  background-color: $main-color;
   height: 60px;
   color: $white-color;
   border: none;
@@ -14,15 +14,15 @@
   padding: 0;
 
   &:hover {
-    background: #AF3419;
+    background: #af3419;
   }
 
   &:active {
-    background: #EA340D;
+    background: #ea340d;
   }
 
   &:disabled {
-    background: #DD836F;
+    background: #dd836f;
   }
 
   @include onDesktop {
@@ -47,11 +47,12 @@
     @include onTablet {
       width: 330px;
       margin-bottom: 30px;
-    };
+    }
+
     @include onDesktop {
       width: 270px;
       margin-bottom: 108px;
-    };
+    }
   }
 
   &--last-in-section {
