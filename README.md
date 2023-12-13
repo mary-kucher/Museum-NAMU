@@ -1,3 +1,4 @@
-Technologies: JavaScript, HTML, CSS, SCSS, BEM.
 
-[DEMO LINK](https://mary-kucher.github.io/museum-namu/
+[DEMO LINK](https://mary-kucher.github.io/museum-namu/)
+
+Technologies: JavaScript, HTML, CSS, SCSS, BEM.
