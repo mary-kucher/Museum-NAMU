@@ -48,4 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
         form.reset();
       }
     }, false);
+
+  const buttons = document.getElementsByClassName('font-main--button');
+
+  Array.from(buttons).forEach(b => b.addEventListener('click', function(event) {
+    window.scrollTo(0, 0);
+  }, true));
 });
