@@ -16,22 +16,36 @@
     margin-bottom: 30px;
     font-weight: 700;
 
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus, {
+      -webkit-text-size-adjust: inherit;
+      -webkit-text-fill-color: $secondary-red-color;
+      -webkit-background-clip: text;
+    }
+
     &::placeholder {
       font-weight: 400;
     }
 
     &:hover {
       border-bottom: 1px $main-color solid;
-      color: #af3419;
+      color: $secondary-red-color;
+      background: none;
 
       &::placeholder {
-        color: #af3419;
+        color: $secondary-red-color;
       }
     }
 
-    &:active {
+    &:focus {
+      color: $secondary-red-color;
+      background: none;
       border-bottom: 1px $main-color solid;
-      color: $main-color;
+
+      &::placeholder {
+        color: #ffffff;
+      }
     }
   }
 }

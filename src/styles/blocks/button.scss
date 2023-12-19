@@ -1,20 +1,22 @@
+button {
+  color: $white-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 330px;
   background-color: $main-color;
   height: 60px;
-  color: $white-color;
-  border: none;
-  outline: none;
-  cursor: pointer;
   transition: all 0.3s;
   padding: 0;
 
   &:hover {
-    background: #af3419;
+    background: $secondary-red-color;
   }
 
   &:active {
@@ -27,6 +29,10 @@
 
   @include onDesktop {
     max-width: 270px;
+  }
+
+  @include onTablet {
+    max-width: 330px;
   }
 
   &--header {
@@ -63,6 +69,12 @@
     }
   }
 
+  &__up {
+    background: $background-color;
+    :hover, :active, :disabled {
+      background: $background-color;
+    }
+  }
   &__secondary {
     display: none;
     background-color: #fff;
@@ -75,8 +87,8 @@
     }
 
     &:hover {
-      border: 1px #AF3419 solid;
-      color: #AF3419;
+      border: 1px $secondary-red-color solid;
+      color: $secondary-red-color;
       background-color: #fff;
     }
 
@@ -98,8 +110,8 @@
       border: 1px $main-color solid;
       color: $main-color;
       &:hover {
-        border: 1px #AF3419 solid;
-        color: #AF3419;
+        border: 1px $secondary-red-color solid;
+        color: $secondary-red-color;
       }
 
       &:active {

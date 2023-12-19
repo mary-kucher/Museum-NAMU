@@ -20,12 +20,11 @@
   }
 
   @include onTablet {
-    height: 1092px;
+    min-height: 100vh;
     margin-bottom: 105px;
   }
 
   @include onDesktop {
-    height: 800px;
     margin-bottom: 110px;
   }
 
@@ -41,29 +40,7 @@
     }
   }
 
-  &__select-language {
-    color: $white-color;
-    background-color: inherit;
-    display: none;
-    border: none;
-    font-weight: 500;
-    line-height: none;
-
-    &--is-visible {
-      display: block;
-    }
-
-    @include onTablet {
-      display: block;
-    }
-
-    &--menu {
-      display: block;
-    }
-
-  }
-
-  &__title-datas {
+  &__title-dates {
     color: $white-color;
     margin-bottom: 10px;
 
@@ -108,16 +85,18 @@
     display: flex;
     height: 272px;
     justify-content: center;
+    position: absolute;
+    right: 50%;
+    left: 50%;
 
     @include onTablet {
       height: 494px;
+      right: 0;
+      left: 39vw;
+      bottom: 0;
     }
 
     @include onDesktop {
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 0;
       height: 662px;
       justify-content: end;
 

@@ -6,7 +6,7 @@
     <title>NAMU</title>
     <link
       rel="shortcut icon"
-      href="/images/favicon.png"
+      href="./images/favicon.png"
       type="image/x-icon"
     >
     <link rel="stylesheet" href="./styles/main.scss">
@@ -17,7 +17,7 @@
     >
   </head>
   <body class="page__body">
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
     <header class="header">
       <div class="header__container">
         <div class="header__content">
@@ -26,19 +26,19 @@
               <img
                 class="logo__image"
                 src="./images/NAMU.svg"
-                alt="namu"
+                alt="namu logo"
               >
             </a>
             <div class="header__right-side">
-              <a href="#" class="icon burger-button">
+              <div class="icon burger-button">
                 <span></span>
-              </a>
+              </div>
             </div>
           </div>
           <div class="grid">
             <div
               class="grid__item grid__item--desktop-1-2 grid__item--tablet-1-2
-              header__title-datas font-main font-main--additional"
+              header__title-dates font-main font-main--additional"
             >
               10 серпня - 10 листопада
             </div>
@@ -74,23 +74,6 @@
     <nav class="page__menu menu" id="menu">
       <div class="container">
         <div class="menu__content">
-          <!-- <div class="top-actions top-actions--menu">
-            <a href="./" class="logo">
-              <img
-                class="logo__image"
-                src="./images/NAMU.svg"
-                alt="logo NAMU">
-            </a>
-            <div class="menu__right-side">
-              <a href="#" class="icon icon--cross">
-                <img src="./images/cross.svg" alt="icon cross">
-              </a>
-              <select class="header__select-language header__select-language--menu font-main" name="select-language">
-                <option value="value1" selected>UA</option>
-                <option value="value2">ENG</option>
-              </select>
-            </div>
-          </div> -->
           <ul class="menu__list">
             <li class="menu__item menu__item--information font-main font-main--additional">
               <div>Розклад сьогодні:
@@ -112,7 +95,7 @@
               <a href="#actual-exhibition" class="menu__link link font-title font-title--menu-h5-h3">Актуальні виставки</a>
             </li>
             <li class="menu__item">
-              <a href="#upcoming events" class="menu__link link font-title font-title--menu-h5-h3">Найближчі події</a>
+              <a href="#upcoming-events" class="menu__link link font-title font-title--menu-h5-h3">Найближчі події</a>
             </li>
             <li class="menu__item">
               <a href="#news" class="menu__link link font-title font-title--menu-h5-h3">Новини</a>
@@ -186,7 +169,7 @@
           </div>
         </div>
       </section>
-      <section class="page__section page__section--2 upcoming-events" id="upcoming events">
+      <section class="page__section page__section--2 upcoming-events" id="upcoming-events">
         <div class="container">
           <div class="grid">
             <div class="grid__item grid__item--tablet-1-4 grid__item--desktop-1-6 upcoming-events__title font-title font-title--h3">
@@ -213,7 +196,7 @@
             </div>
             <div class="place__photo-container place__photo-container--2 grid__item grid__item--tablet-1-3 grid__item--desktop-1-4">
               <img src="./images/image4.png"
-              alt="Place 2 foto"
+              alt="Place 2 photo"
               class="place__photo">
             </div>
             <div class="upcoming-events__place font-main grid__item grid__item--tablet-4-6 grid__item--desktop-5-10">
@@ -249,7 +232,7 @@
                 <br>
                 візит до музею
               </div>
-              <div class="plan-visit__discription font-main">
+              <div class="plan-visit__description font-main">
                 Оберіть зручний день, зареєструйтесь на події, що цікавлять, купіть квиток заздалегідь, щоб ніщо не завадило вам насолоджуватись мистецтвом
               </div>
               <button class="button button--last-in-section font-main font-main--button">
@@ -272,7 +255,7 @@
               <div class="place__content">
                 <div class="place__photo-container place__photo-container--3">
                   <img src="./images/img_08.png"
-                  alt="Place 3 foto"
+                  alt="Place 3 photo"
                   class="place__photo place__photo--3">
                 </div>
                 <span class="place__dates place__dates--3 font-main font-main--additional">9 серпня 2019</span>
@@ -290,7 +273,7 @@
               <div class="place__content">
                 <div class="place__photo-container place__photo-container--3">
                   <img src="./images/img_09.png"
-                  alt="Place 3 foto"
+                  alt="Place 3 photo"
                   class="place__photo place__photo--3">
                 </div>
                 <span class="place__dates place__dates--3 font-main font-main--additional">9 серпня 2019</span>
@@ -348,7 +331,7 @@
             </div>
             <div class="footer__section--contacts-wrapper">
               <a
-              class="footer__adress link"
+              class="footer__address link"
               href="https://goo.gl/maps/qjN7ppkKYQGD5eJVA"
               target="_blank">
                 Київ,
@@ -424,7 +407,7 @@
               <a href="#actual-exhibition" class="footer__menu-item link">
                 Виставки
               </a>
-              <a href="#upcoming events" class="footer__menu-item link">
+              <a href="#upcoming-events" class="footer__menu-item link">
                 Події
               </a>
               <a href="#news" class="footer__menu-item link">
@@ -439,13 +422,13 @@
             <span>Privacy — Terms</span>
           </div>
           <span class="footer__arrow-wrapper">
-            <a href="#">
+            <button class="button__up">
               <img
-                src=".//images/scroll up.svg"
+                src="./images/scroll up.svg"
                 alt="arrow scroll up"
                 class="footer__arrow link link--arrow"
               >
-            </a>
+            </button>
           </span>
         </div>
       </div>

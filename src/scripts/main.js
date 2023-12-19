@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const mainPageBody = document.querySelector('.page__body');
   const menuContent = document.querySelector('.menu__content');
 
-  burgerMenuEventListners();
+  burgerMenuEventLisetners();
 
-  function burgerMenuEventListners() {
+  function burgerMenuEventLisetners() {
     burgerMenuIcon.addEventListener('click', burgerMenuIconClick);
 
     headerMenuLink.forEach(el =>
