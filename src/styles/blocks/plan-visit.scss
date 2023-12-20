@@ -43,7 +43,7 @@
 
     @include onDesktop {
       margin-bottom: 10px;
-      height: 200px;
+      min-height: 200px;
 
     }
   }

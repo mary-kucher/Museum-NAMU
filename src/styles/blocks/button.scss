@@ -48,16 +48,11 @@ button {
   }
 
   &--menu {
-    margin-bottom: 248px;
-
     @include onTablet {
       width: 330px;
-      margin-bottom: 30px;
     }
-
     @include onDesktop {
       width: 270px;
-      margin-bottom: 108px;
     }
   }
 

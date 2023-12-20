@@ -1,7 +1,7 @@
 .menu {
   background-color: $background-color;
-  height: 748px;
   position: fixed;
+  height: 100vh;
   left: 0;
   top: 0;
   right: 0;
@@ -11,16 +11,8 @@
   &--is-open {
     transform: translateY(0);
     transition: transform 1s;
-    overflow: hidden;
-    height: 100vh;
-  }
+    overflow-y: auto;
 
-  @include onTablet {
-    height: 1092px;
-  }
-
-  @include onDesktop {
-    min-height: 100vh;
   }
 
   &__right-side {
@@ -37,17 +29,14 @@
   &__content {
     box-sizing: border-box;
     height: 100vh;
-    overflow: hidden;
     padding-top: 90px;
     opacity: 0;
     animation: 0.4s ease opacityEnd forwards;
 
     &--is-visible {
+      height: 100%;
+      position: relative;
       animation: 1s ease 0.5s opacityStart forwards;
-    }
-
-    @include onTablet {
-      padding-top: 106px;
     }
   }
 
@@ -115,6 +104,12 @@
       height: 696px;
       justify-content: end;
     }
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: contain;
+    object-position: right;
   }
 }
 
